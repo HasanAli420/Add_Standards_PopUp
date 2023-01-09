@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+            }
+            }
+        }
+        }
+    </script>
+</head>
+<body class="bg-[#f5f5f5]">
+
+    <div class="standert-popup bg-white w-96  m-auto rounded-2xl">
+        <form action="#" class="p-5">
+            <h3 class="text-lg text-[#162849]">Add Standards</h3>
+            <input type="text" class="block w-full border border[#E4E7F2] rounded-md py-2 px-3 my-4 placeholder:text-sm focus:outline-none" placeholder="Instrument name">
+            <input type="date" class="block w-full border border[#E4E7F2] rounded-md py-2 px-3 my-4 placeholder:text-sm focus:outline-none" placeholder="Calibration Date">
+            <input type="date" class="block w-full border border[#E4E7F2] rounded-md py-2 px-3 my-4 placeholder:text-sm focus:outline-none" placeholder="Calibration Due Date">
+            <input type="email" class="block w-full border border[#E4E7F2] rounded-md py-2 px-3 my-4 placeholder:text-sm focus:outline-none" placeholder="Instrument Id">
+            <input type="number" class="block w-full border border[#E4E7F2] rounded-md py-2 px-3 my-4 placeholder:text-sm focus:outline-none" placeholder="Certificate Number">
+            <button class="w-full bg-blue-500 text-white py-2 text-lg rounded-md" type="submit">Save</button>
+        </form>
+    </div>
+    
+    
+</body>
+</html>
